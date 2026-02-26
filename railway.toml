@@ -4,3 +4,6 @@ builder = "nixpacks"
 [deploy]
 startCommand = "node server.js"
 healthcheckPath = "/api/auth/me"
+
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["nodejs_22"]
